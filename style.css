@@ -1,0 +1,290 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: san;
+  font-weight: 100;
+}
+
+.container {
+  background-color: hsl(78deg 10% 20%);
+  display: grid;
+  margin: 1rem;
+}
+
+body {
+  background-color: hsl(10deg 94% 67%);
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  gap: 10px;
+  transition: 0.5s;
+}
+
+.navigation:hover{
+  background-color: #000000;
+
+}
+
+.name {
+  color: hsl(27deg 22% 90%);
+  font-family: sans-serif;
+  color: hsl(27deg 22% 90%);
+  transition: 0.3s;
+}
+.name:hover{
+  transform: scale(1.1);
+  color: #addef1;
+  
+}
+
+a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: hsl(27deg 22% 90%);
+  transition: 0.3s;
+  
+}
+a:hover{
+  transform: scale(1.2);
+  color: #addef1;
+  }
+
+
+
+
+
+.main-container {
+  display: grid;
+  position: relative;
+}
+
+.header-adv {
+  display: grid;
+  background-color: hsl(78deg 10% 20%);
+  margin: 100px;
+  border-bottom-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding-left: 10px;
+  gap: 1rem;
+  color: hsl(60deg 3% 87%);
+  width: 70vw;
+  max-width: 500px;
+  position: relative;
+  left: 300px;
+  z-index: 10;
+  transition: 0.3s;
+}
+.header-adv:hover{
+  color: rgba(64, 136, 70, 0.719);
+  background-color: #050a06;
+
+}
+
+
+.main-header {
+  display: grid;
+}
+
+.svg-image {
+  display: grid;
+  place-content: center;
+}
+.svg-actual-img {
+  width: 30vw;
+
+  position: absolute;
+  top: 200px;
+  left: -20px;
+  z-index: 20;
+  transition: 2s;
+  
+}
+
+.svg-actual-img:hover {
+  background-color: black;
+}
+
+
+h1 {
+  padding-left: 1rem;
+}
+
+h2 {
+  color: hsl(49deg 98% 48%);
+  padding-left: 4rem;
+}
+
+b {
+  color: hsl(196deg 56% 57%);
+}
+
+.arrow {
+  text-align: center;
+  color: white;
+  transition: 1s;
+  animation: upDown 1s infinite ;
+  position: relative;
+}
+
+.arrow:hover {
+  color: #5bc3eb;
+}
+
+
+@keyframes upDown {
+  0%{ bottom: 0px;  }
+  50%{ bottom: 20px;}
+  100%{bottom:0px}
+  
+  
+}
+
+
+
+.projects {
+  grid-area: projects;
+  background-color: #ede6e2;
+
+  display: grid;
+  grid-template:
+    ". projects-h3 ." 1fr
+    "first-menu second-menu third-menu" auto/
+    auto auto auto;
+  gap: 20px;
+}
+
+.videos {
+  width: 10vw;
+}
+.first-menu {
+  grid-area: first-menu;
+  border: 1px solid black;
+  padding: 20px;
+  margin-left: 150px;
+  margin-bottom: 10px;
+  background-color: white;
+  transition: 0.5s;
+}
+.first-menu:hover{
+  background-color: #7fc7e4;
+}
+.second-menu {
+  grid-area: second-menu;
+  padding: 20px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  background-color: white;
+  transition: 0.5s;
+}
+.second-menu:hover{
+  background-color: #7fc7e4;
+}
+.third-menu {
+  grid-area: third-menu;
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 10px;
+  margin-right: 150px;
+  background-color: white;
+  transition: 0.5s;
+}
+.third-menu:hover{
+  background-color: #7fc7e4;
+}
+.projects-h3 {
+  grid-area: projects-h3;
+}
+h4 {
+  color: rgb(226, 105, 5);
+}
+
+h3 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.experience {
+  grid-area: experience;
+  background-color: #5bc3eb;
+
+  display: grid;
+  gap: 10px;
+  transition: 0.5s;
+}
+.first-row {
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0px 250px;
+  background-color: white;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 180px 1fr 180px;
+  text-align: center;
+  transition: 0.5s;
+}
+.first-row:hover{
+  background-color: hsl(10deg 94% 67%);
+}
+.second-row {
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0px 250px;
+  background-color: white;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 180px 1fr 180px;
+  text-align: center;
+  transition: 0.5s;
+}
+.second-row:hover{
+  background-color: hsl(10deg 94% 67%);
+}
+.third-row {
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0px 250px;
+  background-color: white;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 180px 1fr 180px;
+  text-align: center;
+  transition: 0.5s;
+}
+.fourth-row {
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0px 250px;
+  margin-bottom: 50px;
+  background-color: white;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 180px 1fr 180px;
+  text-align: center;
+  transition: 0.5s;
+}
+.hoxton-logo {
+  width: 60px;
+  margin-left: 50px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #000000;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+}
